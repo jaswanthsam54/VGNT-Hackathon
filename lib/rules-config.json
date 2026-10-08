@@ -1,0 +1,90 @@
+{
+  "act": "Legal Metrology Act, 2009",
+  "rules": "Legal Metrology (Packaged Commodities) Rules, 2011",
+  "rule6": {
+    "description": "Every package shall carry the following declarations",
+    "mandatory_fields": [
+      {
+        "id": "manufacturer_name",
+        "label": "Manufacturer / Packer Name & Address",
+        "rule_ref": "Rule 6(1)(a)",
+        "required": true,
+        "severity": "critical"
+      },
+      {
+        "id": "generic_name",
+        "label": "Generic / Common Commodity Name",
+        "rule_ref": "Rule 6(1)(b)",
+        "required": true,
+        "severity": "critical"
+      },
+      {
+        "id": "net_quantity",
+        "label": "Net Quantity",
+        "rule_ref": "Rule 6(1)(b)",
+        "required": true,
+        "severity": "critical"
+      },
+      {
+        "id": "mrp",
+        "label": "Maximum Retail Price (MRP)",
+        "rule_ref": "Rule 6(1)(f)",
+        "required": true,
+        "severity": "critical"
+      },
+      {
+        "id": "unit_sale_price",
+        "label": "Unit Sale Price (USP)",
+        "rule_ref": "Rule 6(11)",
+        "required": true,
+        "severity": "major",
+        "note": "Mandatory on all pre-packaged commodities (2021 amendment)"
+      },
+      {
+        "id": "month_year_of_mfg",
+        "label": "Month & Year of Manufacture / Import",
+        "rule_ref": "Rule 6(1)(d)",
+        "required": true,
+        "severity": "critical"
+      },
+      {
+        "id": "consumer_care",
+        "label": "Consumer Care / Helpline Number or Address",
+        "rule_ref": "Rule 6(1)(l)",
+        "required": true,
+        "severity": "major"
+      },
+      {
+        "id": "country_of_origin",
+        "label": "Country of Origin (imported goods)",
+        "rule_ref": "Rule 6(1)(m)",
+        "required": false,
+        "severity": "major",
+        "note": "Mandatory for imported goods only"
+      },
+      {
+        "id": "fssai_lic",
+        "label": "FSSAI Licence Number (food items)",
+        "rule_ref": "FSS Act, 2006",
+        "required": false,
+        "severity": "major",
+        "note": "Mandatory for food products"
+      },
+      {
+        "id": "batch_lot",
+        "label": "Batch / Lot Number",
+        "rule_ref": "Rule 6(1)(e)",
+        "required": false,
+        "severity": "minor"
+      },
+      {
+        "id": "expiry_date",
+        "label": "Best Before / Expiry Date",
+        "rule_ref": "Rule 6(1)(d) & Schedule II",
+        "required": false,
+        "severity": "major",
+        "note": "Mandatory for perishable / specified goods"
+      }
+    ]
+  }
+}
